@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sushant Tiwari - Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS for styling -->
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .hero {
+      background: linear-gradient(90deg, rgba(29, 53, 87, 0.9), rgba(20, 100, 160, 0.7)), url('hero-image.jpg') center center no-repeat;
+      background-size: cover;
+      padding: 100px 0;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .btn-primary {
+      padding: 10px 30px;
+      font-size: 1.2em;
+    }
+
+    section {
+      padding: 50px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h1 {
+      font-size: 2.5em;
+      color: #1d3557;
+    }
+
+    .experience-card, .skill-card {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background: #1d3557;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer .social-links img {
+      width: 30px;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<div class="top-right-buttons">
+  <a href="index.html" class="btn btn-sm btn-primary">Home</a>
+  <a href="about.html" class="btn btn-sm btn-primary">About me</a>
+  <a href="team.html" class="btn btn-sm btn-primary">My Team</a>
+  <a href="aboutcourse.html" class="btn btn-sm btn-primary">Course</a>
+  <a href="project.html" class="btn btn-sm btn-success">Project</a>
+  <a href="bussiness.html" class="btn btn-sm btn-info">Task1</a>
+  
+</div>
+<style>
+  /* Position buttons at the top-right corner */
+  .top-right-buttons {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 10;
+  }
+
+  .top-right-buttons a {
+      margin-left: 10px; /* Space between buttons */
+  }
+
+  /* Style the buttons */
+  .top-right-buttons .btn {
+      font-size: 14px; /* Smaller text size */
+      padding: 8px 15px; /* Adjust padding for smaller buttons */
+      margin: 5px; /* Margin between buttons */
+  }
+</style>
+
+
+<body>
+
+
+<header class="hero">
+  <div class="container">
+    <h1>Sushant Tiwari</h1>
+    <p>Student | Tech Enthusiast | Algorithm Explorer</p>
+    <a href="bussiness2.html" class="btn btn-lg btn-primary">Anti-Fraud Browser Extension
+    </a>
+  </div>
+</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Fraud Browser Extension</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Consolas, monospace;
+            overflow-x: auto;
+        }
+        .alert {
+            padding: 10px;
+            margin: 10px 0;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .alert-phishing {
+            background-color: #f44336;
+        }
+        .alert-malicious {
+            background-color: #ff9800;
+        }
+        .alert-keyword {
+            background-color: #4caf50;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Anti-Fraud Browser Extension</h1>
+
+    <div class="section">
+        <h2>Problem Statement</h2>
+        <p>An anti-fraud browser extension must detect and prevent fraudulent activities such as phishing, malicious scripts, and fake websites in real-time.</p>
+    </div>
+
+    <div class="section">
+        <h2>Challenges</h2>
+        <ul>
+            <li>Detecting phishing websites quickly.</li>
+            <li>Identifying and blocking malicious scripts.</li>
+            <li>Maintaining an efficient lookup mechanism for blacklisted URLs.</li>
+            <li>Providing real-time alerts without compromising browser performance.</li>
+            <iframe src="https://lottie.host/embed/6245f9fc-4a0e-4a20-abd3-8a368ad17461/WS7DJij9oC.lottie"></iframe>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Solutions Using Algorithms and Data Structures</h2>
+        <h3>Phishing Website Detection:</h3>
+        <ul>
+            <li>Trie for URL lookup to quickly verify if a website is blacklisted.</li>
+            <li>Rabin-Karp Algorithm for string matching (e.g., detecting phishing keywords in page content).</li>
+        </ul>
+
+        <h3>Malicious Script Detection:</h3>
+        <ul>
+            <li>Hashing to identify known malicious script patterns.</li>
+            <li>Brute Force String Search to find suspicious code in real-time.</li>
+        </ul>
+
+        <h3>Efficient URL Lookup:</h3>
+        <ul>
+            <li>Binary Search Tree (BST) or AVL Tree for storing and querying blacklisted URLs.</li>
+            <li>Skip List for dynamic additions/removals in URL lists.</li>
+        </ul>
+
+        <h3>Real-Time Alerts and Blocking:</h3>
+        <ul>
+            <li>Use Queues to process alerts asynchronously.</li>
+            <li>Fenwick Tree or Segment Tree for tracking metrics like suspicious activity frequency.</li>
+            <iframe src="https://lottie.host/embed/eda522d4-afe2-44fe-80df-c6bd22a3d3b1/lzZnZolC2q.lottie"></iframe>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Step-by-Step Implementation</h2>
+        <ol>
+            <li>Initialize Data Structures:
+                <ul>
+                    <li>Create a Trie for blacklisted URLs.</li>
+                    <li>Implement a hash table for malicious script patterns.</li>
+                </ul>
+            </li>
+            <li>Blacklist Verification:
+                <ul>
+                    <li>Use the Rabin-Karp Algorithm to match the domain name against known phishing keywords.</li>
+                </ul>
+            </li>
+            <li>Malicious Script Detection:
+                <ul>
+                    <li>Search for suspicious script snippets using Brute Force Search or Hashing.</li>
+                </ul>
+            </li>
+            <li>Alert System:
+                <ul>
+                    <li>Use a queue to process and display real-time alerts to the user.</li>
+                </ul>
+                <iframe src="https://lottie.host/embed/f90a10b0-6cc4-4c65-8d1a-f67cd1814c37/YNdDm2qKs6.lottie"></iframe>
+            </li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>C++ Code</h2>
+        <pre>
+#include &lt;iostream&gt;
+#include &lt;unordered_map&gt;
+#include &lt;unordered_set&gt;
+#include &lt;queue&gt;
+#include &lt;string&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+
+// Trie Node structure for storing blacklisted URLs
+class TrieNode {
+public:
+    unordered_map&lt;char, TrieNode*&gt; children;
+    bool isEndOfURL;
+    TrieNode() {
+        isEndOfURL = false;
+    }
+};
+
+class Trie {
+private:
+    TrieNode* root;
+
+public:
+    Trie() {
+        root = new TrieNode();
+    }
+
+    // Insert URL into Trie
+    void insert(string url) {
+        TrieNode* currentNode = root;
+        for (char ch : url) {
+            if (currentNode-&gt;children.find(ch) == currentNode-&gt;children.end()) {
+                currentNode-&gt;children[ch] = new TrieNode();
+            }
+            currentNode = currentNode-&gt;children[ch];
+        }
+        currentNode-&gt;isEndOfURL = true;
+    }
+
+    // Search URL in Trie
+    bool search(string url) {
+        TrieNode* currentNode = root;
+        for (char ch : url) {
+            if (currentNode-&gt;children.find(ch) == currentNode-&gt;children.end()) {
+                return false;
+            }
+            currentNode = currentNode-&gt;children[ch];
+        }
+        return currentNode-&gt;isEndOfURL;
+    }
+};
+
+// Rabin-Karp algorithm for string matching (detecting phishing keywords)
+int rabinKarpSearch(string text, string pattern) {
+    int n = text.length();
+    int m = pattern.length();
+    int d = 256; // Number of characters in the input alphabet
+    int q = 101; // A prime number for hashing
+    int p = 0; // Hash value for pattern
+    int t = 0; // Hash value for text
+    int h = 1;
+
+    // Precompute the value of h = d^(m-1) % q
+    for (int i = 0; i &lt; m - 1; i++) {
+        h = (h * d) % q;
+    }
+
+    // Compute the hash value of the pattern and the first window of the text
+    for (int i = 0; i &lt; m; i++) {
+        p = (d * p + pattern[i]) % q;
+        t = (d * t + text[i]) % q;
+    }
+
+    // Slide the pattern over the text one by one
+    for (int i = 0; i &lt;= n - m; i++) {
+        if (p == t) {
+            int j;
+            // Check if the pattern matches the text
+            for (j = 0; j &lt; m; j++) {
+                if (text[i + j] != pattern[j]) {
+                    break;
+                }
+            }
+            if (j == m) {
+                return i; // Pattern found at index i
+            }
+        }
+
+        // Compute hash value for the next window of the text
+        if (i &lt; n - m) {
+            t = (d * (t - text[i] * h) + text[i + m]) % q;
+            if (t &lt; 0) {
+                t = t + q;
+            }
+        }
+    }
+    return -1; // Pattern not found
+}
+
+// Class to detect malicious scripts using hashing
+class MaliciousScriptDetector {
+private:
+    unordered_set&lt;string&gt; maliciousScripts;
+
+public:
+    void addMaliciousScript(string script) {
+        maliciousScripts.insert(script);
+    }
+
+    bool isMalicious(string script) {
+        return maliciousScripts.find(script) != maliciousScripts.end();
+    }
+};
+
+// Alert system to process real-time alerts using a queue
+class AlertSystem {
+private:
+    queue&lt;string&gt; alertQueue;
+
+public:
+    void addAlert(string alert) {
+        alertQueue.push(alert);
+    }
+
+    void processAlerts() {
+        while (!alertQueue.empty()) {
+            cout &lt;&lt; "ALERT: " &lt;&lt; alertQueue.front() &lt;&lt; endl;
+            alertQueue.pop();
+        }
+    }
+};
+
+// Main function that ties everything together
+int main() {
+    // Initialize data structures
+    Trie urlTrie;
+    MaliciousScriptDetector scriptDetector;
+    AlertSystem alertSystem;
+
+    // Insert some blacklisted URLs into the Trie
+    urlTrie.insert("phishingsite.com");
+    urlTrie.insert("fakebank.com");
+
+    // Add some known malicious script patterns
+    scriptDetector.addMaliciousScript("&lt;script&gt;alert('Hacked');&lt;/script&gt;");
+    scriptDetector.addMaliciousScript("&lt;script&gt;evilFunction();&lt;/script&gt;");
+
+    // Simulate website visit with URL and page content
+    string url = "phishingsite.com";
+    string pageContent = "&lt;script&gt;alert('Hacked');&lt;/script&gt;";
+
+    // Check for blacklisted URL
+    if (urlTrie.search(url)) {
+        alertSystem.addAlert("Phishing URL detected: " + url);
+    }
+
+    // Check for malicious script
+    if (scriptDetector.isMalicious(pageContent)) {
+        alertSystem.addAlert("Malicious script detected!");
+    }
+
+    // Search for phishing keywords in the page content using Rabin-Karp
+    string pattern = "fake";
+    if (rabinKarpSearch(pageContent, pattern) != -1) {
+        alertSystem.addAlert("Phishing keyword detected: " + pattern);
+    }
+
+    // Process and display alerts
+    alertSystem.processAlerts();
+
+    return 0;
+}
+        </pre>
+    </div>
+
+    <div class="section">
+        <h2>Simulate Fraud Detection</h2>
+        <label for="url">Enter URL:</label>
+        <input type="text" id="url" placeholder="Enter website URL...">
+
+        <label for="pageContent">Enter Page Content:</label>
+        <input type="text" id="pageContent" placeholder="Enter page content...">
+
+        <button onclick="detectFraud()">Check for Fraud</button>
+
+        <div id="alerts"></div>
+    </div>
+</div>
+
+<script>
+    // Simulate blacklisted URLs
+    const blacklistedURLs = ["phishingsite.com", "fakebank.com"];
+
+    // Simulate malicious scripts
+    const maliciousScripts = [
+        "<script>alert('Hacked');</script>",
+        "<script>evilFunction();</script>"
+    ];
+
+    // Phishing keywords pattern (for simplicity, just a small set of patterns)
+    const phishingKeywords = ["fake", "phishing", "scam"];
+
+    function detectFraud() {
+        const url = document.getElementById('url').value;
+        const pageContent = document.getElementById('pageContent').value;
+        const alertsDiv = document.getElementById('alerts');
+        alertsDiv.innerHTML = ''; // Clear previous alerts
+
+        let alertMessages = [];
+
+        // Check for blacklisted URL
+        if (blacklistedURLs.includes(url)) {
+            alertMessages.push(`<div class="alert alert-phishing">Phishing URL detected: ${url}</div>`);
+        }
+
+        // Check for malicious script
+        for (const script of maliciousScripts) {
+            if (pageContent.includes(script)) {
+                alertMessages.push('<div class="alert alert-malicious">Malicious script detected!</div>');
+                break;
+            }
+        }
+
+        // Check for phishing keywords using a simple pattern match
+        for (const keyword of phishingKeywords) {
+            if (pageContent.toLowerCase().includes(keyword)) {
+                alertMessages.push(`<div class="alert alert-keyword">Phishing keyword detected: ${keyword}</div>`);
+                break;
+            }
+        }
+
+        // If no fraud detected, show a message
+        if (alertMessages.length === 0) {
+            alertMessages.push('<div class="alert alert-keyword">No threats detected!</div>');
+        }
+
+        // Display all alerts
+        alertsDiv.innerHTML = alertMessages.join('');
+    }
+</script>
+
+</body>
+</html>
+<!-- Footer -->
+<footer>
+    <div class="container-fluid">
+      <div class="row footer">
+        <div class="col-md-12 text-center">
+          <h1>Sushant<br><span>Tiwari</span></h1>
+          <ul class="social-links">
+            <li><a href="https://www.instagram.com/sushant__8ds/"><img src="assets/icons8-instagram.gif"></a></li>
+          <li><a href="https://www.linkedin.com/in/sushant8ds/"><img src="assets/icons8-linkedin.gif"></a></li>
+          <li><a href="https://x.com/Sushant__8ds"><img src="assets/icons8-twitter.gif"></a></li>
+          <li><a href="https://github.com/sushant8ds"><img src="assets/icons8-github.gif"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row sub-footer">
+        <div class="col-md-12 text-center">
+          <p>Gmail: <a href="#" target="_blank">sushantds2003@gmail.com</a> <a href="http://designerdada.com/free-bootstrap-one-page-portfolio-template/"></a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Some Javascript -->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/swiper.jquery.min.js"></script>
+  <!-- Initialize Client Swiper -->
+  <script>
+  var swiper1 = new Swiper('.client-swiper', {
+    slidesPerView: 3,
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    spaceBetween: 60,
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is <= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: '.swiper-pagination'
+      },
+      // when window width is <= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is <= 640px
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      }
+    }
+  });
+  // Initialize Testimonial Swiper
+  var swiper2 = new Swiper('.testimonial-swiper', {
+    slidesPerView: 3,
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    spaceBetween: 30,
+    grabCursor: true,
+    freeMode: true,
+    breakpoints: {
+      // when window width is <= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      // when window width is <= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      // when window width is <= 640px
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      }
+    }
+  });
+  </script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script>
+  // Counterup
+  $('.counter').counterUp({
+    time: 1000
+  });
+
+  // Main Navigation
+  $('#menu-toggle').click(function(){
+    $(this).toggleClass('open'),
+    $('.main-nav').toggleClass('show-it');
+  })
+  </script>
+
+  <!-- Google Analytics - You should remove this -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29231762-2', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</body>
+</html>

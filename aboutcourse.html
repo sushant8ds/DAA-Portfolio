@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sushant Tiwari - Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS for styling -->
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .hero {
+      background: linear-gradient(90deg, rgba(29, 53, 87, 0.9), rgba(20, 100, 160, 0.7)), url('hero-image.jpg') center center no-repeat;
+      background-size: cover;
+      padding: 100px 0;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .btn-primary {
+      padding: 10px 30px;
+      font-size: 1.2em;
+    }
+
+    section {
+      padding: 50px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h1 {
+      font-size: 2.5em;
+      color: #1d3557;
+    }
+
+    .experience-card, .skill-card {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background: #1d3557;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer .social-links img {
+      width: 30px;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<div class="top-right-buttons">
+    <a href="index.html" class="btn btn-sm btn-primary">Home</a>
+    <a href="about.html" class="btn btn-sm btn-primary">About me</a>
+  <a href="team.html" class="btn btn-sm btn-primary">My Team</a>
+  <a href="project.html" class="btn btn-sm btn-success">Project</a>
+  <a href="bussiness.html" class="btn btn-sm btn-info">Task1</a>
+  <a href="bussiness2.html" class="btn btn-sm btn-info">Task2</a>
+</div>
+<style>
+  /* Position buttons at the top-right corner */
+  .top-right-buttons {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 10;
+  }
+
+  .top-right-buttons a {
+      margin-left: 10px; /* Space between buttons */
+  }
+
+  /* Style the buttons */
+  .top-right-buttons .btn {
+      font-size: 14px; /* Smaller text size */
+      padding: 8px 15px; /* Adjust padding for smaller buttons */
+      margin: 5px; /* Margin between buttons */
+  }
+</style>
+
+
+<body>
+
+
+<header class="hero">
+  <div class="container">
+    <h1>Sushant Tiwari</h1>
+    <p>Student | Tech Enthusiast | Algorithm Explorer</p>
+    <a href="aboutcourse.html" class="btn btn-lg btn-primary">DAA</a>
+  </div>
+</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <link rel="stylesheet" href="st.css">
+    <style>
+        /* General styling for fonts and layout */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2, h3 {
+            font-size: 28px;
+            color: #333;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        h2 span {
+            color: #007BFF;
+        }
+
+        p, ul {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            padding: 0 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image1 {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-containerrr {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .cardddd {
+            background-color: #fff;
+            width: 250px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cardddd:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cardddd img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .cardddd h2 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .line {
+            width: 60px;
+            height: 4px;
+            background-color: #007BFF;
+            margin: 10px auto;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        .fade-in-delay {
+            animation: fadeIn 2s ease-in-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 1.5s ease-out forwards;
+        }
+
+        @keyframes fadeUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        .hover-effect:hover {
+            transform: translateX(10px);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Add fade-in effect for the card containers */
+        .card-containerrr {
+            opacity: 0;
+            animation: fadeIn 3s ease-in-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <section class="fade-in">
+        <h2 class="heading"><span>About</span> Course</h2>
+        <div class="row fade-up">
+            <div class="image1">
+                <iframe src="https://lottie.host/embed/e4c07bc8-852b-4240-a93a-3d93d5e9fb28/L2TNQ885FB.lottie"></iframe>
+            </div>
+            <div class="content">
+                <h3>What is the course about?</h3>
+                <div class="line"></div>
+                <p>The "Design and Analysis of Algorithms" course focuses on understanding, designing, and evaluating algorithms to solve computational problems efficiently. It covers topics such as recursion, graph algorithms, sorting and searching, and advanced data structures like trees and heaps. Students learn to analyze algorithm efficiency in terms of time and space complexity and apply these techniques to real-world problem scenarios, building a strong foundation for advanced computing challenges.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="fade-in">
+        <div class="row fade-up">
+            <div class="content">
+                <h3>What kind of data structures and algorithms have you studied?</h3>
+                <div class="line"></div>
+                <h3>Data Structures</h3>
+                <ul>
+                    <li>Arrays</li>
+                    <li>Stacks</li>
+                    <li>Queues</li>
+                    <li>Linked Lists</li>
+                    <li>Trees</li>
+                    <li>Skip List</li>
+                    <li>Union Find</li>
+                    <li>Structures</li>
+                    <li>Tables</li>
+                    <li>Hashing</li>
+                    <li>DFS</li>
+                    <li>BFS</li>
+                    <li>Sorting</li>
+                    <li>Rabin-Karp</li>
+                    <li>Brute Force String Search</li>
+                    <li>Graphs</li>
+                    <li>Heaps</li>
+                    <li>Advanced structures like Tries, Fenwick Trees, Segment Trees, and Skip Lists</li>
+                </ul>
+
+                <h3>Algorithms</h3>
+                <ul>
+                    <li><strong>Sorting and Searching:</strong> Organizing data (Bubble Sort, Quick Sort, Merge Sort) and finding items (Binary Search, KMP Algorithm).</li>
+                    <li><strong>Graph Algorithms:</strong> Shortest path algorithms (Dijkstra’s, Bellman-Ford) and Minimum Spanning Trees (Prim’s, Kruskal’s).</li>
+                    <li><strong>Pathfinding:</strong> Algorithms to determine routes (Floyd-Warshall).</li>
+                    <li><strong>Optimization Problems:</strong> Knapsack, Travelling Salesperson Problem, and Huffman Coding.</li>
+                    <li><strong>Recursion and Backtracking:</strong> Problem-solving using function calls (N-Queens Problem).</li>
+                    <li><strong>String Matching:</strong> Algorithms like Rabin-Karp, Boyer-Moore, and Brute Force for searching patterns in text.</li>
+                    <li><strong>Divide and Conquer:</strong> Techniques like Merge Sort and Strassen’s Matrix Multiplication.</li>
+                    <li><strong>Dynamic Programming:</strong> Solving problems by breaking them into overlapping subproblems (Fibonacci, Longest Common Subsequence).</li>
+                    <li><strong>Undecidability:</strong> Understanding problems that can't be solved algorithmically (Halting Problem).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="fade-in">
+        <div class="row fade-up">
+            <div class="image1">
+                <iframe src="https://lottie.host/embed/726b40bc-6c61-46ee-be6e-bd370c519b5d/80S7dKyezR.lottie"></iframe>
+            </div>
+            <div class="content">
+                <h3>How do you connect the course with real-time applications?</h3>
+                <div class="line"></div>
+                <ul>
+                    <li><strong>Graph Algorithms:</strong> Use Dijkstra's or Kruskal's algorithms for route optimization in transportation networks or telecommunication systems.</li>
+                    <li><strong>Sorting and Searching:</strong> Implement efficient algorithms in e-commerce platforms for inventory management and quick product searches.</li>
+                    <li><strong>Data Structures:</strong> Apply heaps, trees, and hash tables in database indexing and real-time data retrieval systems like caching.</li>
+                    <li><strong>Optimization Problems:</strong> Solve real-world scenarios like the Knapsack problem for resource allocation in project management.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="fade-in">
+        <h2 class="heading">Reference <span>Books</span></h2>
+        <div class="card-containerrr">
+            <div class="cardddd hover-effect">
+                <img src="assets/book (1).jpg" class="client-logo" style="width: 300px; height: auto;">
+                <h2>Introduction to Algorithms</h2>
+                <p>Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein (Third Edition)</p>
+            </div>
+            <div class="cardddd hover-effect">
+                <img src="assets/book (2).jpg" class="client-logo" style="width: 300px; height: auto;">
+                <h2>Introduction to Algorithms</h2>
+                <p>Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein (Fourth Edition)</p>
+            </div>
+            <div class="cardddd hover-effect">
+                <img src="assets/book (3).jpg" class="client-logo" style="width: 300px; height: auto;">
+                <h2>Introduction to the Design and Analysis of Algorithm</h2>
+                <p>Anany Levitin (Second Edition)</p>
+            </div>
+        </div>
+    </section>
+    
+    </section>
+</body>
+</html>
+<!-- Footer -->
+<footer>
+    <div class="container-fluid">
+      <div class="row footer">
+        <div class="col-md-12 text-center">
+          <h1>Sushant<br><span>Tiwari</span></h1>
+          <ul class="social-links">
+            <li><a href="https://www.instagram.com/sushant__8ds/"><img src="assets/icons8-instagram.gif"></a></li>
+            <li><a href="https://www.linkedin.com/in/sushant8ds/"><img src="assets/icons8-linkedin.gif"></a></li>
+            <li><a href="https://x.com/Sushant__8ds"><img src="assets/icons8-twitter.gif"></a></li>
+            <li><a href="https://github.com/sushant8ds"><img src="assets/icons8-github.gif"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row sub-footer">
+        <div class="col-md-12 text-center">
+          <p>Gmail: <a href="#" target="_blank">sushantds2003@gmail.com</a> <a href="http://designerdada.com/free-bootstrap-one-page-portfolio-template/"></a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Some Javascript -->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/swiper.jquery.min.js"></script>
+  <!-- Initialize Client Swiper -->
+  <script>
+  var swiper1 = new Swiper('.client-swiper', {
+    slidesPerView: 3,
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    spaceBetween: 60,
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is <= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: '.swiper-pagination'
+      },
+      // when window width is <= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is <= 640px
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      }
+    }
+  });
+  // Initialize Testimonial Swiper
+  var swiper2 = new Swiper('.testimonial-swiper', {
+    slidesPerView: 3,
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    spaceBetween: 30,
+    grabCursor: true,
+    freeMode: true,
+    breakpoints: {
+      // when window width is <= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      // when window width is <= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      // when window width is <= 640px
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      }
+    }
+  });
+  </script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script>
+  // Counterup
+  $('.counter').counterUp({
+    time: 1000
+  });
+
+  // Main Navigation
+  $('#menu-toggle').click(function(){
+    $(this).toggleClass('open'),
+    $('.main-nav').toggleClass('show-it');
+  })
+  </script>
+
+  <!-- Google Analytics - You should remove this -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29231762-2', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
+
